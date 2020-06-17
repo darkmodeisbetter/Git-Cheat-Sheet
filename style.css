@@ -7,14 +7,14 @@ body {
     
     
 }
-p {
+p, ul, li {
     color: #c0c0c0;
     font-size: 9pt;
     width: 579px;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, footer {
     color: #00af00;
     font-size: 9pt;
     width: 579px;
