@@ -9,10 +9,9 @@
 <body>
     <h1>User@DESKTOP 
         <span class="environment-variable"> MINGW64</span> 
-        /
+        <span class="directory"> /</span>
         - GIT Cheat Sheet</h1>
-    <h1 style=color:gold>/</h1>
-    <p>This was written in the style of GIT BASH. Links will be provided to download GIT BASH below.
+    <p>This was written in the style of GIT BASH.
     </p>
 </br>
     <h2>Help and Tutorials</h2>
@@ -53,6 +52,46 @@
     <p>$ git init</p>
     <p>: Initializes empty Git Repository inside current directory. .git file is invisible by default.</p>
 </br>
-    <h3></h3>
+    <h2>Creating, Editing and Deleting Files</h2>
+    <p>$ touch example.txt</p>
+    <p>: touch = standard command used in Linux operating system to create an empty file. It can be used in GIT BASH.</p>
+    <p>$ echo "Content to add to a file" > example.txt</p>
+    <p>: echo = command to output text to a computer file. > = file the text will be stored in.</p>
+    <p>$ notepad example.txt</p>
+    <p>: Opens the named file in the mentioned software. There are multiple software options and file types available eg. code index.html opens a HTML file in Visual Studio Code.</p>
+    <p>$ git rm example.txt</p>
+    <p>: Deletes the file from the directory.</p>
+    <p>$ git mv example.txt newname.txt</p>
+    <p>: mv = Move. In this context, we are renaming the file example.txt to newname.txt, we have "moved" the name from example to newname.</p>
+    <p>$ git mv example.txt C:\Users\Example\DifferentDirectory</p>
+    <p>: Moves the file from the current directory to the directory you have specified. </p>
+</br>
+    <h2>Staging and Committing Changes</h2>
+    <p>$ git status</p>
+    <p>: lists current status of directory, whether any changes have been made and need adding or committing.</p>
+    <p>$ git add FileName.txt/html/md etc.</p>
+    <p>: Adds selected file to the staging area. Must be done BEFORE commit. </p>
+    <p>$ git add *</p>
+    <p>: Adds all changed files to staging.</p>
+    <p>$ git rm -cached FileName.txt/html/md etc.</p>
+    <p>: rm = Remove. -cached = Tracked file on staging. Removes file from the staging area. Useful if changes need to be done or if a file was added by mistake.</p>
+    <p>$ git commit -m "Your message detailing changes here"</p>
+    <p>: Commits any changes you have added in the staging area to your local directory. m = message. Commit messages can be 50-70 characters in length.</p>
+</br>
+    <h2>Tracking Changes</h2>
+    <p>$ git log</p>
+    <p>: Lists all commits of your current project, including commits from other users.</p>
+    <p>$ git log --oneline</p>
+    <p>: Condences each commit to a single line.</p>
+    <p>$ git log 123abc4</p>
+    <p>: Replace the random string with the commit hash id. Displays all commits until the specified id.</p>
+    <p>$ git log --reverse</p>
+    <p>: Lists commits in chronological order.</p>
+    <p>$ git log -n -4</p>
+    <p>: Displays last 4 git commits. You can use any number, 4 was just an example.</p>
+    <p>$ git diff</p>
+    <p>: Shows all additions to a file in green text and deleted content in red text, allowing you to visually see what has been modified.</p>
+    <p>$ git diff --color-words</p>
+    <p>: Shows only changed text and not the previous addition. Condences differences to as few lines as possible.</p>
 </body>
 </html>
