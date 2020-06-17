@@ -23,8 +23,52 @@
     <p>git clone https://github.com/DifferentUser/RepositoryToClone.git</p>
     <p>: Downloads and clones a copy of another users git folder from their remote repository to your local machine.</p>
 </br>
-    <h2>Interacting</h2>
+    <h2>GitHub Interaction Commands</h2>
     <p>$ git push origin master</p>
     <p>: push = Push any changes that have been committed from your local machine repository to the remote GitHub repository. origin = named reference to Remote Repository. master = default branch you are working on.</p>
+    <p>$ git push --dry-run origin master</p>
+    <p>: Preview git push, useful for checking error messages.</p>
+    <p>$ git fetch</p>
+    <p>: fetch = collect all changes and updates. Gets new updates from Remote Repository to review.</p>
+    <p>$ git fetch --dry-run</p>
+    <p>: Preview git fetch.</p>
+    <p>$ git merge</p>
+    <p>: Combines current changes from a seperate branch into the master branch. Allows developer to review code before addinng to the main release.</p>
+    <p>$ git pull</p>
+    <p>: Recieve any 'pull' requests from external contributors.</p>
+</br>
+    <h2>Viewing, Creating and Deleting Branches</h2>
+    <p>$ git branch</p>
+    <p>: Lists all branches available.</p>
+    <p>$ git branch -a</p>
+    <p>: Includes invisible folders.</p>
+    <p>$ git branch dev</p>
+    <p>: Creates a new branch. dev = placeholder name, you can name your branch whatever you like.</p>
+    <p>$ git push -u origin dev</p>
+    <p>: pushes new branch to your remote repository, -u includes tracked changes.</p>
+    <p>$ git checkout master</p>
+    <p>: checkout command directs you to the named branch. Master is the default branch in every repository. Replace Master with whichever branch you need to work in.</p>
+    <p>$ git branch -d dev</p>
+    <p>: Deletes the named branch from the local repository.</p>
+    <p>$ git push origin --delete dev</p>
+    <p>: Deletes the named branch at the remote repository.</p>
+    <p>$ git merge dev</p>
+    <p>: Merge the named branch to the branch you are currently working in (usually Master).</p>
+</br>
+    <h2>Viewing, Creating and Deleting Tags</h2>
+    <p>$ git tag</p>
+    <p>: Displays current tags.</p>
+    <p>$ git tag -a V1.0 -m "Version 1" 123abc4</p>
+    <p>: Creates a new tag. v1.0 = name of new tag. Message for tag is in enclosed quotes. 123abc4 is a hashcode placeholder. Replace this with the commit hashcode you would like to apply a tag to.</p>
+    <p>$ git push --tags</p>
+    <p>: Stores tags in remote repository.</p>
+    <p>$ git tag -d V1.0</p>
+    <p>: Deletes the named tag in the local repository.</p>
+    <p>$ git push origin :V1.0 </p>
+    <p>: Deletes the named tag in the remote repository.</p>
+    <p>$ git tag -f V1.01 456def7</p>
+    <p>: Updates name of the tag through the hashcode</p>
+    <p>$ git push --force origin v2.0</p>
+    <p>: Forces a tag in github remote repository to update.</p>
 </body>
 </html>
