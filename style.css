@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    display: block;
+    border: 1pt;
+    margin: 1pt;
+    
+    
+}
+p {
+    color: #c0c0c0;
+    font-size: 9pt;
+    width: 579px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00af00;
+    font-size: 9pt;
+    width: 579px;
+    font-weight: lighter;
+}
+
+.environment-variable {
+    color:#af00af;
+}
