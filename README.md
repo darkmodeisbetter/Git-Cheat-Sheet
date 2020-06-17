@@ -1,6 +1,6 @@
 # Git Cheat Sheet for Beginners
 
-![Preview of Git Cheat Sheet](images\GitCheatSheet.png)
+![Preview of Git Cheat Sheet](https://github.com/darkmodeisbetter/Git-Cheat-Sheet/blob/master/images/GitCheatSheet.png)
 
 ---
 ## Intro
